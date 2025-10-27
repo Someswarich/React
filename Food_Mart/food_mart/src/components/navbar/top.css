@@ -1,0 +1,98 @@
+
+.top-nav {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.top-nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+.top-nav-top h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+
+.top-nav-top .support {
+  text-align: center;
+}
+
+.top-nav-top .support p:first-child {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.top-nav-top .support p:last-child {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.top-nav-top .cart {
+  background-color: #f4fff4;
+  border: 1px solid #c8f0c8;
+  border-radius: 8px;
+  padding: 8px 15px;
+  text-align: right;
+}
+
+.top-nav-top .cart p:first-child {
+  color: #555;
+  font-size: 14px;
+}
+
+.top-nav-top .cart p:last-child {
+  color: #007f00;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content:start;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+}
+
+nav ul li {
+  color: rgb(18, 18, 18);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav ul li:hover {
+  color: #ffc43f;
+}
+
+/* === Responsive Styles (for mobile) === */
+@media (max-width: 768px) {
+  .top-nav-top {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+  }
+}
